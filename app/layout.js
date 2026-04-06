@@ -22,6 +22,9 @@ export const metadata = {
   title: "PBContábeis | Imposto de Renda e Contabilidade Humana em São Paulo",
   description: "Contabilidade próxima e descomplicada para MEIs, MEs e profissionais informais. A agilidade do digital com o atendimento de quem resolve o seu problema.",
   keywords: "Imposto de Renda, Contabilidade MEI, Declaração IRPF, Contador São Paulo, Regularização CPF, Contabilidade Autônomo, PBContábeis",
+  icons: {
+    icon: "/images/favicon.ico",
+  },
   openGraph: {
     title: "PBContábeis | Sua Contabilidade em Boas Mãos",
     description: "Atendimento próximo e digital para você e sua pequena empresa. Especialistas em descomplicar burocracias fiscais.",

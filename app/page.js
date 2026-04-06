@@ -24,7 +24,7 @@ export default function Home() {
       <header className={`header ${scrolled ? "scrolled" : ""}`}>
         <div className="container nav-container">
           <div className="logo-container">
-            <img src="/images/logo_text.png" alt="PB Contábeis" className="logo-img" />
+            <img src="/images/logo_base.png" alt="PB Contábeis" className="logo-img" />
           </div>
 
           <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
@@ -171,7 +171,7 @@ export default function Home() {
         <div className="container">
           <div className="footer-grid">
             <div className="footer-brand">
-              <img src="/images/logo_text.png" alt="PBContábeis" className="footer-logo" />
+              <img src="/images/logo_base.png" alt="PBContábeis" className="footer-logo" />
               <p>Contabilidade próxima e humana em São Paulo. Especialistas em descomplicar a vida de quem produz.</p>
             </div>
             <div className="footer-nav">
