@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Head from "next/head";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,9 +48,9 @@ export default function Home() {
         <section className="hero">
           <div className="container hero-grid">
             <div className="hero-text fade-in-up">
-              <h1 className="h1">Contabilidade humana para quem foca no que importa.</h1>
+              <h1 className="h1">Contabilidade humana e digital para quem foca no que importa.</h1>
               <p className="p-large">
-                Deixe a burocracia com a gente. Atendimento digital e próximo para trabalhadores informais, MEIs e pequenas empresas em São Paulo.
+                Deixe a burocracia com a gente. Atendimento próximo para trabalhadores informais, MEIs e pequenas empresas em São Paulo.
               </p>
               <div className="hero-actions">
                 <a href="https://wa.me/5511949640360" className="btn-primary">Quero Regularizar meu Negócio</a>
@@ -62,26 +61,28 @@ export default function Home() {
               <div className="hero-image-frame">
                 <img src="/images/paula-bonifacio.png" alt="Paula Bonifácio - Contadora" className="hero-img-main" />
               </div>
-              <div className="hero-floating-card glass">
-                 <span className="dot"></span>
-                 <p>Paula Bonifácio, a sua contadora.</p>
-              </div>
+               <div className="hero-floating-card glass">
+                  <span className="dot"></span>
+                  <p>Paula Bonifácio, a sua Contadora.</p>
+               </div>
             </div>
           </div>
         </section>
 
-        {/* TRUST BAR */}
-        <div className="trust-bar">
-          <div className="container">
-             <div className="trust-content">
-                <span>Especialistas em situações complexas</span>
-                <span className="separator">•</span>
-                <span>+100 Clientes Satisfeitos</span>
-                <span className="separator">•</span>
-                <span>Suporte Personalizado</span>
-             </div>
+        {/* TRUST BAR SECTION */}
+        <section className="trust-section">
+          <div className="trust-bar">
+            <div className="container">
+               <div className="trust-content">
+                  <span>Especialistas em situações complexas</span>
+                  <span className="separator">•</span>
+                  <span>+3000 Clientes Satisfeitos</span>
+                  <span className="separator">•</span>
+                  <span>Suporte Personalizado</span>
+               </div>
+            </div>
           </div>
-        </div>
+        </section>
 
         {/* SERVIÇOS */}
         <section id="servicos" className="services">
@@ -93,10 +94,10 @@ export default function Home() {
 
             <div className="services-grid">
               {[
-                { title: "Empresas", desc: "Abertura e encerramento de Empresa. Assessoria Trabalhista, Fiscal e Contábil total.", icon: "🏢" },
-                { title: "Saúde", desc: "Legalização de Consultório, Clínica Médica ou Odontológica. DEMED (Declaração de Serviços Médicos).", icon: "🩺" },
-                { title: "Pessoa Física", desc: "Regularização de CPF, Declaração de IRPF, Carnê-leão (DARF) e Malha Fiscal.", icon: "👤" },
-                { title: "Previdência", desc: "Orientação sobre Aposentadoria no RGPS e planejamento previdenciário.", icon: "🏦" },
+                { title: "Empresas", desc: "Abertura, encerramento e gestão contábil total de empresas (ME e EPP). Assessoria Trabalhista e Fiscal.", icon: "🏢" },
+                { title: "Saúde", desc: "Legalização de consultórios e clínicas. Especialistas em carnê-leão e DEMED para profissionais da saúde.", icon: "🩺" },
+                { title: "Pessoa Física", desc: "Declaração de IRPF, ganhos de capital, regularização de CPF e Malha Fiscal do IRPF.", icon: "👤" },
+                { title: "Previdência", desc: "Planejamento previdenciário e assessoria para aposentadoria (RGPS).", icon: "🏦" },
                 { title: "Doméstico", desc: "Gestão total de E-Social Doméstica para garantir todos os direitos e deveres.", icon: "🏠" },
                 { title: "Notas Fiscais", desc: "Emissão de Nota fiscal (NFe) ou Nota Fiscal Paulistana para o seu negócio.", icon: "📄" }
               ].map((service, i) => (
@@ -137,12 +138,39 @@ export default function Home() {
           </div>
         </section>
 
+        {/* IRPF HIGHLIGHT SECTION */}
+        <section className="irpf-highlight">
+          <div className="container">
+            <div className="irpf-card-dark">
+              <div className="irpf-text">
+                <h2 className="h2-gold">Preocupado com a Malha Fina?</h2>
+                <p className="p-subtitle-light">
+                  Deixe sua declaração com quem é especialista em casos complexos: Ações, Criptoativos, Ganho de Capital e Rendimentos do Exterior.
+                </p>
+                <div className="irpf-features">
+                  <span>✓ Análise Preventiva</span>
+                  <span>✓ Otimização de Restituição</span>
+                  <span>✓ Suporte Especializado</span>
+                </div>
+                <div className="irpf-actions">
+                  <a href="/imposto-de-renda" className="btn-gold">Saiba Mais sobre IRPF</a>
+                </div>
+              </div>
+              <div className="irpf-visual">
+                <img src="/images/leao-irpf.png" alt="Leão IRPF" className="irpf-lion-img" />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA FINAL */}
         <section className="cta-section">
-          <div className="container cta-container glass">
-              <h2 className="h2-white">Tire suas dúvidas agora mesmo com a nossa equipe</h2>
-              <p className="p-white">Não deixe para a última hora. Regularize seu negócio hoje.</p>
-              <a href="https://wa.me/5511949640360" className="btn-large">Falar no WhatsApp</a>
+          <div className="container overflow-hidden">
+            <div className="cta-container glass">
+                <h2 className="h2-white">Tire suas dúvidas agora mesmo com a nossa equipe</h2>
+                <p className="p-white">Não deixe para a última hora. Regularize seu negócio hoje.</p>
+                <a href="https://wa.me/5511949640360" className="btn-large">Falar no WhatsApp</a>
+            </div>
           </div>
         </section>
 
@@ -153,8 +181,10 @@ export default function Home() {
             <div className="faq-grid">
               {[
                 { q: "Preciso declarar Imposto de Renda sendo profissional autônomo?", a: "Sim, se seus rendimentos tributáveis ultrapassarem o limite estabelecido pela Receita Federal. Mesmo abaixo do limite, declarar pode ajudar a comprovar renda para financiamentos ou aluguéis." },
+                { q: "Qual o prazo para a entrega da declaração do Imposto de Renda?", a: "A entrega deve ser realizada até 31 de maio. Recomendamos o envio precoce para prioridade na restituição e evitar congestionamentos no sistema da Receita." },
                 { q: "O que acontece se meu MEI atrasar o DAS?", a: "Você pode perder benefícios previdenciários e ter o CNPJ cancelado. Ajudamos a parcelar dívidas e regularizar sua situação rapidamente." },
                 { q: "Posso migrar de MEI para ME com vocês?", a: "Com certeza! Cuidamos de todo o processo de desenquadramento e transição para o novo regime tributário, garantindo agilidade e economia." },
+                { q: "Meu CPF está com status 'Irregular' ou 'Suspenso'. Como a PBContábeis ajuda?", a: "Analisamos a causa da irregularidade e realizamos todo o processo de regularização junto à Receita Federal para normalizar seu CPF e evitar bloqueios em contas bancárias." },
                 { q: "Qual a diferença entre contador tradicional e a PBContábeis?", a: "Nós unimos a agilidade do digital com o atendimento humano e próximo. Você fala diretamente com quem resolve o seu problema, sem intermediários ou termos técnicos complicados." }
               ].map((item, i) => (
                 <details key={i} className="faq-item glass">
@@ -381,7 +411,7 @@ export default function Home() {
           padding: 48px 32px;
           border-radius: 24px;
           transition: var(--transition);
-          cursor: pointer;
+          cursor: default;
         }
 
         .service-card:hover {
@@ -414,11 +444,12 @@ export default function Home() {
         /* CTA */
         .cta-section { padding-bottom: 0; }
         .cta-container {
-          background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
-          padding: 100px 48px;
+          background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+          padding: 80px 48px;
           border-radius: 40px;
           text-align: center;
           color: white;
+          width: 100%;
         }
         .h2-white { font-size: 3rem; margin-bottom: 24px; }
         .p-white { font-size: 1.3rem; margin-bottom: 48px; opacity: 0.9; }
@@ -440,7 +471,7 @@ export default function Home() {
           display: grid; 
           grid-template-columns: repeat(2, 1fr); 
           gap: 20px; 
-          max-width: 1000px; 
+          width: 100%;
           margin: 0 auto; 
         }
         .faq-item { border-radius: 16px; overflow: hidden; height: fit-content; }
@@ -524,15 +555,59 @@ export default function Home() {
           .nav-menu ul { flex-direction: column; text-align: center; }
           .btn-header { margin-left: 0; padding: 15px 30px; width: 100%; text-align: center; }
 
-          .services-grid { grid-template-columns: 1fr; }
-          .diff-grid { grid-template-columns: 1fr; }
-          .h2 { font-size: 2.2rem; }
-          .h2-white { font-size: 2.2rem; }
-          .footer-grid { grid-template-columns: 1fr; }
-          .footer-brand { grid-column: span 1; }
-          .wa-text { display: none; }
+          .service-card { cursor: default; }
           .whatsapp-floating { padding: 15px; border-radius: 50%; }
+
+          .trust-content {
+            flex-direction: column;
+            gap: 12px;
+            text-align: center;
+          }
+          .separator { display: none; }
+
+          .irpf-card-dark {
+            padding: 40px 24px;
+            text-align: center;
+            flex-direction: column;
+          }
+          .irpf-visual { display: none; }
+          .cta-container { padding: 60px 24px; border-radius: 20px; }
         }
+
+        /* IRPF HIGHLIGHT SECTION STYLE */
+        .irpf-highlight {
+          padding: 100px 0;
+          background-color: transparent;
+        }
+        .irpf-card-dark {
+          background: #030a16;
+          padding: 80px;
+          border-radius: 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 60px;
+          border: 1px solid rgba(197, 160, 55, 0.2);
+          box-shadow: 0 40px 80px rgba(13, 71, 161, 0.15);
+        }
+        .h2-gold { font-size: 3rem; color: #C5A037; margin: 0 0 24px; }
+        .p-subtitle-light { color: #cbd5e1; font-size: 1.2rem; line-height: 1.6; }
+        .irpf-features { display: flex; gap: 24px; margin: 32px 0; color: #fff; font-weight: 500; font-size: 0.95rem; }
+        .irpf-visual { flex: 0 0 300px; display: flex; justify-content: center; }
+        .irpf-lion-img { width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+        .btn-gold {
+          background: #C5A037;
+          color: #000;
+          padding: 20px 48px;
+          border-radius: 14px;
+          font-weight: 800;
+          font-size: 1.1rem;
+          text-decoration: none;
+          display: inline-block;
+          transition: var(--transition);
+        }
+        .btn-gold:hover { background: #fff; transform: translateY(-3px); box-shadow: 0 15px 30px rgba(197, 160, 55, 0.3); }
+        .overflow-hidden { overflow: hidden; }
       `}</style>
     </div>
   );

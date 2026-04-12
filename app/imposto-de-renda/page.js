@@ -106,7 +106,7 @@ export default function ImpostoDeRendaDark() {
                      <div className="hero-actions">
                         <a href="https://wa.me/5511949640360" className="btn-gold icon-btn">
                            <WhatsAppIcon />
-                           Simule sua declaração
+                           Falar com Especialista
                         </a>
                      </div>
                   </div>
