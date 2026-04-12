@@ -28,6 +28,7 @@ export default function Home() {
 
           <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
             <ul>
+              <li><a href="#irpf" className="nav-highlight" onClick={() => setIsMenuOpen(false)}>Imposto de Renda</a></li>
               <li><a href="#servicos" onClick={() => setIsMenuOpen(false)}>Serviços</a></li>
               <li><a href="#diferenciais" onClick={() => setIsMenuOpen(false)}>Diferenciais</a></li>
               <li><a href="#faq" onClick={() => setIsMenuOpen(false)}>Dúvidas</a></li>
@@ -139,7 +140,7 @@ export default function Home() {
         </section>
 
         {/* IRPF HIGHLIGHT SECTION */}
-        <section className="irpf-highlight">
+        <section id="irpf" className="irpf-highlight">
           <div className="container">
             <div className="irpf-card-dark">
               <div className="irpf-text">
@@ -159,17 +160,6 @@ export default function Home() {
               <div className="irpf-visual">
                 <img src="/images/leao-irpf.png" alt="Leão IRPF" className="irpf-lion-img" />
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA FINAL */}
-        <section className="cta-section">
-          <div className="container overflow-hidden">
-            <div className="cta-container glass">
-                <h2 className="h2-white">Tire suas dúvidas agora mesmo com a nossa equipe</h2>
-                <p className="p-white">Não deixe para a última hora. Regularize seu negócio hoje.</p>
-                <a href="https://wa.me/5511949640360" className="btn-large">Falar no WhatsApp</a>
             </div>
           </div>
         </section>
@@ -195,6 +185,17 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* CTA FINAL */}
+        <section className="cta-section">
+          <div className="container overflow-hidden">
+            <div className="cta-container glass">
+                <h2 className="h2-white">Tire suas dúvidas agora mesmo com a nossa equipe</h2>
+                <p className="p-white">Não deixe para a última hora. Regularize seu negócio hoje.</p>
+                <a href="https://wa.me/5511949640360" className="btn-large">Falar no WhatsApp</a>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer className="footer">
@@ -208,6 +209,7 @@ export default function Home() {
               <h4>Navegação</h4>
               <ul>
                 <li><a href="#">Início</a></li>
+                <li><a href="#irpf">Imposto de Renda</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#diferenciais">Diferenciais</a></li>
                 <li><a href="#faq">Dúvidas</a></li>
@@ -286,6 +288,21 @@ export default function Home() {
         }
 
         .nav-menu a:hover { color: hsl(var(--primary)); }
+        
+        .nav-highlight {
+          color: #C5A037 !important;
+          font-weight: 700 !important;
+          position: relative;
+        }
+        
+        .nav-highlight::after {
+          content: '•';
+          position: absolute;
+          top: -10px;
+          right: -8px;
+          font-size: 1.2rem;
+          color: #C5A037;
+        }
 
         .btn-header {
           background: hsl(var(--primary));
@@ -576,7 +593,7 @@ export default function Home() {
 
         /* IRPF HIGHLIGHT SECTION STYLE */
         .irpf-highlight {
-          padding: 100px 0;
+          padding: 70px 0;
           background-color: transparent;
         }
         .irpf-card-dark {

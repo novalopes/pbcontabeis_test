@@ -1,4 +1,5 @@
 import { Inter, Outfit } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({ 
@@ -23,7 +24,9 @@ export const metadata = {
   description: "Contabilidade digital e humana para trabalhadores informais, MEIs e pequenas empresas em São Paulo. Especialistas em regularização e Imposto de Renda.",
   keywords: "Contabilidade MEI São Paulo, Imposto de Renda IRPF, Regularização CPF, Contador Digital, Assessoria Fiscal ME, PBContábeis",
   icons: {
-    icon: "/images/favicon_dark.png",
+    icon: "/images/favicon.ico",
+    shortcut: "/images/favicon-32x32.png",
+    apple: "/images/favicon-32x32.png",
   },
   openGraph: {
     title: "PBContábeis | Sua Contabilidade Próxima e Especializada",
@@ -41,7 +44,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${outfit.variable} scroll-smooth`}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <GoogleAnalytics gaId="G-VSBKDB19YK" />
+      </body>
     </html>
   );
 }

@@ -78,6 +78,8 @@ export default function ImpostoDeRendaDark() {
 
                <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
                   <ul>
+                     <li><a href="/" onClick={() => setIsMenuOpen(false)}>Início</a></li>
+                     <li><a href="/#irpf" className="nav-highlight-active" onClick={() => setIsMenuOpen(false)}>Imposto de Renda</a></li>
                      <li><a href="#solucoes" onClick={() => setIsMenuOpen(false)}>Soluções</a></li>
                      <li><a href="#documentos" onClick={() => setIsMenuOpen(false)}>Documentos</a></li>
                      <li><a href="#faq" onClick={() => setIsMenuOpen(false)}>Dúvidas</a></li>
@@ -243,6 +245,21 @@ export default function ImpostoDeRendaDark() {
         }
 
         .gold-text { color: #C5A037 !important; }
+        
+        .nav-highlight-active {
+           color: #C5A037 !important;
+           font-weight: 700 !important;
+           position: relative;
+        }
+        
+        .nav-highlight-active::after {
+           content: '•';
+           position: absolute;
+           top: -10px;
+           right: -8px;
+           font-size: 1.2rem;
+           color: #C5A037;
+        }
         
         .header {
           position: fixed;
