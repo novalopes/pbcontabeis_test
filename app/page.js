@@ -543,10 +543,12 @@ export default function Home() {
           .hero-image-container { order: 2; max-width: 400px; margin: 0 auto; }
           .hero-floating-card { left: 50%; transform: translateX(-50%); bottom: -20px; white-space: nowrap; }
           .hero-actions { display: flex; flex-direction: column; align-items: center; }
-          .services-grid { grid-template-columns: repeat(2, 1fr); }
+          .services-grid { grid-template-columns: 1fr; }
           .faq-grid { grid-template-columns: 1fr; }
-          .footer-grid { grid-template-columns: 1fr 1fr; }
-          .footer-brand { grid-column: span 2; }
+          .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+          .footer-brand { grid-column: span 1; text-align: center; }
+          .footer-logo { margin: 0 auto 24px; }
+          .footer-nav, .footer-contact { text-align: center; }
           .h1 { font-size: 3rem; }
         }
 
@@ -591,7 +593,7 @@ export default function Home() {
             text-align: center;
             flex-direction: column;
           }
-          .irpf-visual { display: block; width: 100%; max-width: 250px; margin: 30px auto 0; }
+          .irpf-visual { display: block; width: 100%; max-width: 350px; margin: 30px auto 0; }
           .irpf-lion-img { width: 100%; height: auto; object-fit: contain; }
           .cta-container { padding: 60px 24px; border-radius: 20px; }
 
