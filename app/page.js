@@ -144,9 +144,9 @@ export default function Home() {
           <div className="container">
             <div className="irpf-card-dark">
               <div className="irpf-text">
-                <h2 className="h2-gold">Preocupado com a Malha Fina?</h2>
+                <h2 className="h2-gold">Declaração de Imposto de Renda sem Complicação</h2>
                 <p className="p-subtitle-light">
-                  Deixe sua declaração com quem é especialista em casos complexos: Ações, Criptoativos, Ganho de Capital e Rendimentos do Exterior.
+                  Não corra riscos com a Receita Federal. Nossa equipe garante uma entrega precisa, segura e com foco na sua tranquilidade e máxima restituição.
                 </p>
                 <div className="irpf-features">
                   <span>✓ Análise Preventiva</span>
@@ -171,7 +171,7 @@ export default function Home() {
             <div className="faq-grid">
               {[
                 { q: "Preciso declarar Imposto de Renda sendo profissional autônomo?", a: "Sim, se seus rendimentos tributáveis ultrapassarem o limite estabelecido pela Receita Federal. Mesmo abaixo do limite, declarar pode ajudar a comprovar renda para financiamentos ou aluguéis." },
-                { q: "Qual o prazo para a entrega da declaração do Imposto de Renda?", a: "A entrega deve ser realizada até 31 de maio. Recomendamos o envio precoce para prioridade na restituição e evitar congestionamentos no sistema da Receita." },
+                { q: "Como funciona a gestão do E-Social Doméstica?", a: "Cuidamos de todo o processo: desde o cadastro do empregador e empregado até a emissão mensal das guias DAE, controle de férias e rescisões, garantindo que você esteja 100% dentro da lei." },
                 { q: "O que acontece se meu MEI atrasar o DAS?", a: "Você pode perder benefícios previdenciários e ter o CNPJ cancelado. Ajudamos a parcelar dívidas e regularizar sua situação rapidamente." },
                 { q: "Posso migrar de MEI para ME com vocês?", a: "Com certeza! Cuidamos de todo o processo de desenquadramento e transição para o novo regime tributário, garantindo agilidade e economia." },
                 { q: "Meu CPF está com status 'Irregular' ou 'Suspenso'. Como a PBContábeis ajuda?", a: "Analisamos a causa da irregularidade e realizamos todo o processo de regularização junto à Receita Federal para normalizar seu CPF e evitar bloqueios em contas bancárias." },
@@ -187,6 +187,7 @@ export default function Home() {
         </section>
 
         {/* CTA FINAL */}
+        {/* CTA FINAL
         <section className="cta-section">
           <div className="container overflow-hidden">
             <div className="cta-container glass">
@@ -196,6 +197,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        */}
       </main>
 
       <footer className="footer">
@@ -582,13 +584,19 @@ export default function Home() {
           }
           .separator { display: none; }
 
+          .diff-grid { grid-template-columns: 1fr; gap: 20px; }
+
           .irpf-card-dark {
             padding: 40px 24px;
             text-align: center;
             flex-direction: column;
           }
-          .irpf-visual { display: none; }
+          .irpf-visual { display: block; width: 100%; max-width: 250px; margin: 30px auto 0; }
+          .irpf-lion-img { width: 100%; height: auto; object-fit: contain; }
           .cta-container { padding: 60px 24px; border-radius: 20px; }
+
+          .wa-text { display: none; }
+          .whatsapp-floating { padding: 15px; border-radius: 50%; bottom: 20px; right: 20px; }
         }
 
         /* IRPF HIGHLIGHT SECTION STYLE */
