@@ -593,8 +593,8 @@ export default function Home() {
             text-align: center;
             flex-direction: column;
           }
-          .irpf-visual { display: block; width: 100%; max-width: 350px; margin: 30px auto 0; }
-          .irpf-lion-img { width: 100%; height: auto; object-fit: contain; }
+          .irpf-visual { display: block; width: 100%; max-width: 350px; margin: 30px auto 0; flex: none; }
+          .irpf-lion-img { width: 100%; height: auto; object-fit: contain; -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%); mask-image: radial-gradient(circle at center, black 60%, transparent 100%); }
           .cta-container { padding: 60px 24px; border-radius: 20px; }
 
           .wa-text { display: none; }
@@ -603,12 +603,12 @@ export default function Home() {
 
         /* IRPF HIGHLIGHT SECTION STYLE */
         .irpf-highlight {
-          padding: 70px 0;
+          padding: 40px 0;
           background-color: transparent;
         }
         .irpf-card-dark {
           background: #030a16;
-          padding: 80px;
+          padding: 48px 60px;
           border-radius: 40px;
           display: flex;
           justify-content: space-between;
@@ -620,8 +620,20 @@ export default function Home() {
         .h2-gold { font-size: 3rem; color: #C5A037; margin: 0 0 24px; }
         .p-subtitle-light { color: #cbd5e1; font-size: 1.2rem; line-height: 1.6; }
         .irpf-features { display: flex; gap: 24px; margin: 32px 0; color: #fff; font-weight: 500; font-size: 0.95rem; }
-        .irpf-visual { flex: 0 0 300px; display: flex; justify-content: center; }
-        .irpf-lion-img { width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+        .irpf-visual { flex: 0 0 380px; display: flex; justify-content: center; position: relative; }
+        .irpf-lion-img { 
+          width: 100%; 
+          height: auto; 
+          border-radius: 24px; 
+          box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+          -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+          mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+          transition: var(--transition);
+        }
+        .irpf-lion-img:hover {
+          transform: scale(1.02);
+          filter: brightness(1.1);
+        }
         .btn-gold {
           background: #C5A037;
           color: #000;
