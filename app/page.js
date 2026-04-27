@@ -28,7 +28,6 @@ export default function Home() {
 
           <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
             <ul>
-              <li><a href="#irpf" className="nav-highlight" onClick={() => setIsMenuOpen(false)}>Imposto de Renda</a></li>
               <li><a href="#servicos" onClick={() => setIsMenuOpen(false)}>Serviços</a></li>
               <li><a href="#diferenciais" onClick={() => setIsMenuOpen(false)}>Diferenciais</a></li>
               <li><a href="#faq" onClick={() => setIsMenuOpen(false)}>Dúvidas</a></li>
