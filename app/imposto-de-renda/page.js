@@ -4,31 +4,31 @@ import { useState, useEffect } from "react";
 
 const HandCoinsIcon = () => (
    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/>
-      <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/>
-      <path d="m2 16 5 5"/>
-      <circle cx="16" cy="11" r="3"/>
-      <circle cx="16" cy="5" r="3"/>
+      <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
+      <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
+      <path d="m2 16 5 5" />
+      <circle cx="16" cy="11" r="3" />
+      <circle cx="16" cy="5" r="3" />
    </svg>
 );
 
 const FileCheckIcon = () => (
    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
-      <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
-      <path d="m9 15 2 2 4-4"/>
+      <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+      <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+      <path d="m9 15 2 2 4-4" />
    </svg>
 );
 
 const ChartIcon = () => (
    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/><path d="m7 12 3-3 3 3 4-4"/>
+      <rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /><path d="m7 12 3-3 3 3 4-4" />
    </svg>
 );
 
 const HeadsetIcon = () => (
    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/><path d="M21 16v2a2 2 0 0 1-2 2h-5"/>
+      <path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" /><path d="M21 16v2a2 2 0 0 1-2 2h-5" />
    </svg>
 );
 
@@ -57,7 +57,7 @@ export default function ImpostoDeRendaDark() {
       },
       {
          category: "Ganhos & Bens",
-         items: ["Informe de Rendimentos", "Extratos de Corretoras (Bolsa/Cripto)", "Documentos de Imóveis e Veículos"]
+         items: ["Informe de Rendimentos", "Relatórios de Ganhos (Uber, iFood, etc.)", "Documentos de Imóveis e Veículos"]
       },
       {
          category: "Deduções",
@@ -78,8 +78,7 @@ export default function ImpostoDeRendaDark() {
 
                <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
                   <ul>
-                     <li><a href="/" onClick={() => setIsMenuOpen(false)}>Início</a></li>
-                     <li><a href="/#irpf" className="nav-highlight-active" onClick={() => setIsMenuOpen(false)}>Imposto de Renda</a></li>
+                     <li><a href="#" onClick={() => setIsMenuOpen(false)}>Início</a></li>
                      <li><a href="#solucoes" onClick={() => setIsMenuOpen(false)}>Soluções</a></li>
                      <li><a href="#documentos" onClick={() => setIsMenuOpen(false)}>Documentos</a></li>
                      <li><a href="#faq" onClick={() => setIsMenuOpen(false)}>Dúvidas</a></li>
@@ -103,7 +102,7 @@ export default function ImpostoDeRendaDark() {
                         <span className="gold-text">Soluções Premium</span> e Especializadas.
                      </h1>
                      <p className="p-hero">
-                        Confie em especialistas experientes da <strong>PBContábeis</strong> para maximizar sua restituição e garantir total conformidade fiscal com atendimento exclusivo.
+                        Não deixe o Leão tirar seu sono. Com a <strong>PBContábeis</strong>, você doma o Leão e garante sua restituição com total segurança e o cuidado que você merece.
                      </p>
                      <div className="hero-actions">
                         <a href="https://wa.me/5511949640360" className="btn-gold icon-btn">
@@ -162,10 +161,10 @@ export default function ImpostoDeRendaDark() {
                      <div className="who-needs">
                         <h3 className="gold-text">Quem precisa declarar?</h3>
                         <ul className="needs-ul">
-                           <li>Ganhos tributáveis {">"} R$ 30,6k</li>
+                           <li>Ganhos tributáveis {">"} R$ 35,5k</li>
                            <li>Posse de bens {">"} R$ 800k</li>
-                           <li>Ganhos em Bolsa ou Cripto</li>
-                           <li>Rendimentos do exterior</li>
+                           <li>Vendas em Apps ou Maquininha</li>
+                           <li>Ganhos como Autônomo ou Informal</li>
                         </ul>
                      </div>
                   </div>
@@ -200,12 +199,12 @@ export default function ImpostoDeRendaDark() {
                   <h2 className="gold-text text-center">Dúvidas Frequentes</h2>
                   <div className="faq-wrap">
                      {[
-                        { q: "Quais os prazos regulamentares?", a: "A entrega deve ser realizada até 31 de maio. Recomendamos o envio precoce para prioridade na restituição." },
+                        { q: "Quais os prazos regulamentares?", a: "A entrega deve ser realizada até 29 de maio. Recomendamos o envio precoce para prioridade na restituição." },
                         { q: "Como funciona o sigilo de dados?", a: "Seguimos rigorosamente a LGPD e protocolos de segurança bancária para proteger seus ativos financeiros." },
-                        { q: "Tenho investimentos em Cripto, vocês fazem?", a: "Sim. Realizamos o cálculo de ganho de capital e a declaração detalhada de custódia de ativos digitais." },
+                        { q: "Sou motorista de App ou Autônomo, vocês fazem?", a: "Sim. Realizamos o cálculo de rendimentos para profissionais de aplicativos, entregadores e autônomos, garantindo a regularidade do seu CPF." },
                         { q: "Como regularizar declarações passadas?", a: "Analisamos pendências de anos anteriores e enviamos retificadoras ou declarações em atraso com agilidade." },
                         { q: "Dependentes no exterior são permitidos?", a: "Sim, desde que respeitados os critérios da Receita Federal. Orientamos sobre toda a documentação necessária." },
-                        { q: "Como declarar ações e dividendos?", a: "Realizamos o controle de preço médio, apuração de DARFs e o preenchimento correto de Renda Variável." }
+                        { q: "Como comprovar renda sendo informal?", a: "Com a declaração de IRPF feita por especialistas, você tem um documento oficial para comprovar renda em aluguéis, bancos e financiamentos." }
                      ].map((item, i) => (
                         <details key={i} className="faq-premium">
                            <summary className="gold-text">{item.q}</summary>
