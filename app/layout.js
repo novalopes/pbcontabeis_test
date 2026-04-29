@@ -21,7 +21,7 @@ export const viewport = {
 
 export const metadata = {
   title: "PBContábeis | Contabilidade Humana e Especialista para MEI e ME em SP",
-  description: "Contabilidade digital e humana para trabalhadores informais, MEIs e pequenas empresas em São Paulo. Especialistas em regularização e Imposto de Renda.",
+  description: "Contabilidade digital e humana para trabalhadores informais, MEIs e empresas em São Paulo. Especialistas em regularização e Imposto de Renda.",
   keywords: "Contabilidade MEI São Paulo, Imposto de Renda IRPF, Regularização CPF, Contador Digital, Assessoria Fiscal ME, PBContábeis",
   icons: {
     icon: "/images/favicon.ico",

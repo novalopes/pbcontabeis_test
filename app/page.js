@@ -50,7 +50,7 @@ export default function Home() {
             <div className="hero-text fade-in-up">
               <h1 className="h1">Contabilidade humana e digital para quem foca no que importa.</h1>
               <p className="p-large">
-                Deixe a burocracia com a gente. Atendimento próximo para trabalhadores informais, MEIs e pequenas empresas em São Paulo.
+                Deixe a burocracia com a gente. Atendimento próximo para trabalhadores informais, MEIs e empresas em São Paulo.
               </p>
               <div className="hero-actions">
                 <a href="https://wa.me/5511949640360" className="btn-primary">Quero Regularizar meu Negócio</a>
