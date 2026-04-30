@@ -28,6 +28,7 @@ export default function Home() {
 
           <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
             <ul>
+              <li><a href="#irpf" onClick={() => setIsMenuOpen(false)} className="nav-highlight">Imposto de Renda</a></li>
               <li><a href="#servicos" onClick={() => setIsMenuOpen(false)}>Serviços</a></li>
               <li><a href="#diferenciais" onClick={() => setIsMenuOpen(false)}>Diferenciais</a></li>
               <li><a href="#faq" onClick={() => setIsMenuOpen(false)}>Dúvidas</a></li>
@@ -61,10 +62,10 @@ export default function Home() {
               <div className="hero-image-frame">
                 <img src="/images/paula-bonifacio.png" alt="Paula Bonifácio - Contadora" className="hero-img-main" />
               </div>
-               <div className="hero-floating-card glass">
-                  <span className="dot"></span>
-                  <p>Paula Bonifácio, a sua Contadora.</p>
-               </div>
+              <div className="hero-floating-card glass">
+                <span className="dot"></span>
+                <p>Paula Bonifácio, a sua Contadora.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -73,13 +74,13 @@ export default function Home() {
         <section className="trust-section">
           <div className="trust-bar">
             <div className="container">
-               <div className="trust-content">
-                  <span>Especialistas em situações complexas</span>
-                  <span className="separator">•</span>
-                  <span>+3000 Clientes Satisfeitos</span>
-                  <span className="separator">•</span>
-                  <span>Suporte Personalizado</span>
-               </div>
+              <div className="trust-content">
+                <span>Especialistas em situações complexas</span>
+                <span className="separator">•</span>
+                <span>+3000 Clientes Satisfeitos</span>
+                <span className="separator">•</span>
+                <span>Suporte Personalizado</span>
+              </div>
             </div>
           </div>
         </section>
