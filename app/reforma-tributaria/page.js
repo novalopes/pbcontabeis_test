@@ -682,11 +682,6 @@ export default function ReformaTributaria() {
                z-index: 2;
             }
 
-            .timeline-item:nth-child(even) .timeline-badge {
-               background: #10b981;
-               box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
-            }
-
             .timeline-content {
                padding: 30px;
             }
@@ -719,14 +714,14 @@ export default function ReformaTributaria() {
             }
 
             .checklist-number {
-               position: absolute;
-               top: 20px;
-               right: 30px;
-               font-size: 3rem;
-               font-weight: 900;
-               color: rgba(255, 255, 255, 0.03);
-               line-height: 1;
-            }
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                font-size: 3.5rem;
+                font-weight: 900;
+                color: rgba(0, 242, 254, 0.15);
+                line-height: 1;
+             }
 
             .checklist-card h4 {
                font-size: 1.25rem;
@@ -892,6 +887,11 @@ export default function ReformaTributaria() {
             @media (max-width: 768px) {
                .hamburger {
                   display: flex;
+               }
+
+               .grid-pilares {
+                  grid-template-columns: 1fr;
+                  gap: 20px;
                }
 
                .nav-menu {
