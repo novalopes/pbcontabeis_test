@@ -28,10 +28,9 @@ export default function Home() {
 
           <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
             <ul>
-              <li><a href="#irpf" onClick={() => setIsMenuOpen(false)} className="nav-highlight">Imposto de Renda</a></li>
               <li><a href="#servicos" onClick={() => setIsMenuOpen(false)}>Serviços</a></li>
               <li><a href="#diferenciais" onClick={() => setIsMenuOpen(false)}>Diferenciais</a></li>
-              <li><a href="/reforma-tributaria" className="nav-highlight-teal">Reforma Tributária</a></li>
+              <li><a href="#reforma" onClick={() => setIsMenuOpen(false)} className="nav-highlight-teal">Reforma Tributária</a></li>
               <li><a href="#faq" onClick={() => setIsMenuOpen(false)}>Dúvidas</a></li>
             </ul>
             <a href="https://wa.me/5511949640360" className="btn-header">Falar com Especialista</a>
