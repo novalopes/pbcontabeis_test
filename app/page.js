@@ -659,9 +659,13 @@ export default function Home() {
           font-size: 1.1rem;
           text-decoration: none;
           display: inline-block;
-          transition: var(--transition);
+          transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
         }
-        .btn-teal-home:hover { background: #fff; transform: translateY(-3px); box-shadow: 0 15px 30px rgba(0, 242, 254, 0.3); }
+        .btn-teal-home:hover { 
+          transform: translateY(-3px); 
+          filter: brightness(1.1); 
+          box-shadow: 0 15px 30px rgba(0, 242, 254, 0.3); 
+        }
         .overflow-hidden { overflow: hidden; }
       `}</style>
     </div>

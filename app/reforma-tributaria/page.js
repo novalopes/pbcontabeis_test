@@ -653,8 +653,8 @@ export default function ReformaTributaria() {
             .timeline-item:not(:last-child)::before {
                content: '';
                position: absolute;
-               top: 20px;
-               bottom: -48px;
+               top: 42px;
+               bottom: -90px;
                left: 40px;
                width: 2px;
                background: linear-gradient(to bottom, #00f2fe, #10b981);
@@ -665,7 +665,7 @@ export default function ReformaTributaria() {
                position: absolute;
                left: 40px;
                transform: translateX(-50%);
-               top: 0;
+               top: 23px;
                padding: 6px 12px;
                height: 38px;
                background: #00f2fe;
@@ -935,6 +935,7 @@ export default function ReformaTributaria() {
 
                .timeline-badge {
                   left: 20px;
+                  top: 26px;
                   font-size: 0.8rem;
                   padding: 4px 8px;
                   height: 32px;
