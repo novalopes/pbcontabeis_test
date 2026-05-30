@@ -31,6 +31,7 @@ export default function Home() {
               <li><a href="#irpf" onClick={() => setIsMenuOpen(false)} className="nav-highlight">Imposto de Renda</a></li>
               <li><a href="#servicos" onClick={() => setIsMenuOpen(false)}>Serviços</a></li>
               <li><a href="#diferenciais" onClick={() => setIsMenuOpen(false)}>Diferenciais</a></li>
+              <li><a href="/reforma-tributaria" className="nav-highlight-teal">Reforma Tributária</a></li>
               <li><a href="#faq" onClick={() => setIsMenuOpen(false)}>Dúvidas</a></li>
             </ul>
             <a href="https://wa.me/5511949640360" className="btn-header">Falar com Especialista</a>
@@ -139,26 +140,26 @@ export default function Home() {
           </div>
         </section>
 
-        {/* IRPF HIGHLIGHT SECTION */}
-        <section id="irpf" className="irpf-highlight">
+        {/* REFORMA TRIBUTÁRIA HIGHLIGHT SECTION */}
+        <section id="reforma" className="reforma-highlight">
           <div className="container">
-            <div className="irpf-card-dark">
-              <div className="irpf-text">
-                <h2 className="h2-gold">Declaração de Imposto de Renda sem Complicação</h2>
+            <div className="reforma-card-dark">
+              <div className="reforma-text">
+                <h2 className="h2-teal">Reforma Tributária: Seu Negócio está Preparado?</h2>
                 <p className="p-subtitle-light">
-                  Não corra riscos com a Receita Federal. Nossa equipe garante uma entrega precisa, segura e com foco na sua tranquilidade e máxima restituição.
+                  A maior mudança fiscal das últimas décadas já começou. Faça um planejamento tributário preventivo com nossos especialistas e proteja o faturamento da sua empresa.
                 </p>
-                <div className="irpf-features">
-                  <span>✓ Análise Preventiva</span>
-                  <span>✓ Otimização de Restituição</span>
-                  <span>✓ Suporte Especializado</span>
+                <div className="reforma-features">
+                  <span>✓ Análise de Impacto</span>
+                  <span>✓ Planejamento e Transição</span>
+                  <span>✓ Assessoria Especializada</span>
                 </div>
-                <div className="irpf-actions">
-                  <a href="/imposto-de-renda" className="btn-gold">Saiba Mais sobre IRPF</a>
+                <div className="reforma-actions">
+                  <a href="/reforma-tributaria" className="btn-teal-home">Saiba Mais sobre a Reforma</a>
                 </div>
               </div>
-              <div className="irpf-visual">
-                <img src="/images/leao-irpf.png" alt="Leão IRPF" className="irpf-lion-img" />
+              <div className="reforma-visual">
+                <img src="/images/reforma-concept.png" alt="Reforma Tributária" className="reforma-concept-img" />
               </div>
             </div>
           </div>
@@ -211,7 +212,8 @@ export default function Home() {
               <h4>Navegação</h4>
               <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#irpf">Imposto de Renda</a></li>
+                <li><a href="/imposto-de-renda">Imposto de Renda</a></li>
+                <li><a href="/reforma-tributaria">Reforma Tributária</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#diferenciais">Diferenciais</a></li>
                 <li><a href="#faq">Dúvidas</a></li>
@@ -304,6 +306,21 @@ export default function Home() {
           right: -8px;
           font-size: 1.2rem;
           color: #C5A037;
+        }
+        
+        .nav-highlight-teal {
+          color: #00f2fe !important;
+          font-weight: 700 !important;
+          position: relative;
+        }
+        
+        .nav-highlight-teal::after {
+          content: '•';
+          position: absolute;
+          top: -10px;
+          right: -8px;
+          font-size: 1.2rem;
+          color: #00f2fe;
         }
 
         .btn-header {
@@ -588,55 +605,55 @@ export default function Home() {
 
           .diff-grid { grid-template-columns: 1fr; gap: 20px; }
 
-          .irpf-card-dark {
+          .reforma-card-dark {
             padding: 40px 24px;
             text-align: center;
             flex-direction: column;
           }
-          .irpf-visual { display: block; width: 100%; max-width: 350px; margin: 30px auto 0; flex: none; }
-          .irpf-lion-img { width: 100%; height: auto; object-fit: contain; -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%); mask-image: radial-gradient(circle at center, black 60%, transparent 100%); }
+          .reforma-visual { display: block; width: 100%; max-width: 350px; margin: 30px auto 0; flex: none; }
+          .reforma-concept-img { width: 100%; height: auto; object-fit: contain; -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%); mask-image: radial-gradient(circle at center, black 60%, transparent 100%); }
           .cta-container { padding: 60px 24px; border-radius: 20px; }
 
           .wa-text { display: none; }
           .whatsapp-floating { padding: 15px; border-radius: 50%; bottom: 20px; right: 20px; }
         }
 
-        /* IRPF HIGHLIGHT SECTION STYLE */
-        .irpf-highlight {
+        /* REFORMA HIGHLIGHT SECTION STYLE */
+        .reforma-highlight {
           padding: 40px 0;
           background-color: transparent;
         }
-        .irpf-card-dark {
-          background: #030a16;
+        .reforma-card-dark {
+          background: #040a15;
           padding: 48px 60px;
           border-radius: 40px;
           display: flex;
           justify-content: space-between;
           align-items: center;
           gap: 60px;
-          border: 1px solid rgba(197, 160, 55, 0.2);
-          box-shadow: 0 40px 80px rgba(13, 71, 161, 0.15);
+          border: 1px solid rgba(0, 242, 254, 0.2);
+          box-shadow: 0 40px 80px rgba(0, 242, 254, 0.1);
         }
-        .h2-gold { font-size: 3rem; color: #C5A037; margin: 0 0 24px; }
+        .h2-teal { font-size: 3rem; color: #00f2fe; margin: 0 0 24px; }
         .p-subtitle-light { color: #cbd5e1; font-size: 1.2rem; line-height: 1.6; }
-        .irpf-features { display: flex; gap: 24px; margin: 32px 0; color: #fff; font-weight: 500; font-size: 0.95rem; }
-        .irpf-visual { flex: 0 0 380px; display: flex; justify-content: center; position: relative; }
-        .irpf-lion-img { 
+        .reforma-features { display: flex; gap: 24px; margin: 32px 0; color: #fff; font-weight: 500; font-size: 0.95rem; }
+        .reforma-visual { flex: 0 0 380px; display: flex; justify-content: center; position: relative; }
+        .reforma-concept-img { 
           width: 100%; 
           height: auto; 
           border-radius: 24px; 
           box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-          -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
-          mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+          -webkit-mask-image: radial-gradient(circle at center, black 65%, transparent 100%);
+          mask-image: radial-gradient(circle at center, black 65%, transparent 100%);
           transition: var(--transition);
         }
-        .irpf-lion-img:hover {
+        .reforma-concept-img:hover {
           transform: scale(1.02);
           filter: brightness(1.1);
         }
-        .btn-gold {
-          background: #C5A037;
-          color: #000;
+        .btn-teal-home {
+          background: linear-gradient(135deg, #00f2fe 0%, #10b981 100%);
+          color: #040a15;
           padding: 20px 48px;
           border-radius: 14px;
           font-weight: 800;
@@ -645,7 +662,7 @@ export default function Home() {
           display: inline-block;
           transition: var(--transition);
         }
-        .btn-gold:hover { background: #fff; transform: translateY(-3px); box-shadow: 0 15px 30px rgba(197, 160, 55, 0.3); }
+        .btn-teal-home:hover { background: #fff; transform: translateY(-3px); box-shadow: 0 15px 30px rgba(0, 242, 254, 0.3); }
         .overflow-hidden { overflow: hidden; }
       `}</style>
     </div>
